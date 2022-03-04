@@ -20,6 +20,9 @@
         {# a nother part #}
         <div class="col-md-6">
         {# Générer le QR code dans cette partie #}
+            {% if qrCode %}
+                <img src="{{ qrCode }}" alt="qr-code">
+            {% endif %}
         </div>
 
     </div>
